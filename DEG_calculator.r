@@ -1,7 +1,7 @@
 ###   filter the gene which has low counts
 library(edgeR)
 library(tidyverse)
-setwd('I:\\其他人\\葛敏\\rna-seq')
+setwd('I:\\path\\to\\rna-seq')
 dir()
 fpkmIsoOrd36 <- read.table("tpm_result.txt", sep = "\t", header = T)
 order_frame <- c(1, 5, 6, 7, 11, 12, 13) # reorder the columns based on the requirement of your analyses
